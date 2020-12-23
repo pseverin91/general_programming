@@ -1,0 +1,30 @@
+h1
+{
+    text-align: center;
+    font-size: 300%;
+}
+h3
+{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.caption
+{
+    text-align: center;
+    color: grey;
+    font-size: 150%;
+}
+.links
+{
+    text-align: center;
+}
+.contact
+{
+    color: blue;
+    font-style: italic;
+}
+.update
+{
+    color: grey;
+    font-size: small;
+}

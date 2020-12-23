@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Buy
+{% endblock %}
+
+{% block main %}
+
+    <style>
+        table {
+          border-collapse: collapse;
+          width: 100%;
+        }
+
+        td, th {
+          border: 1px solid #dddddd;
+          text-align: left;
+          padding: 8px;
+        }
+
+        tr:nth-child(even) {
+          background-color: #dddddd;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th>Symbol</th>
+            <th>Name</th>
+            <th>Shares</th>
+            <th>Price</th>
+            <th>TOTAL</th>
+        </tr>
+
+        {% for i in range(len) %}
+        <tr>
+            <th>{{ positions[i]["symbol"] }}</th>
+            <th>{{ positions[i]["name"] }}</th>
+            <th>{{ positions[i]["shares"] }}</th>
+            <th>{{ positions[i]["price"] }}</th>
+            <th>{{ positions[i]["total"] }}</th>
+        </tr>
+        {% endfor %}
+
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>{{ total }}</th>
+        </tr>
+
+    </table>
+
+{% endblock %}
